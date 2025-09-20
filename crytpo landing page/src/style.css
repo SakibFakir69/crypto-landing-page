@@ -5,7 +5,18 @@
     list-style: none;
 }
 
+/* content */
+
 /* utils */
+
+#logo{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 6px;
+}
 
 .set-button {
     height: 40px;
@@ -47,28 +58,46 @@ header {
 /* hero section */
 
 #hero-section {
-    background-image: url('/pexels-tima-miroshnichenko-7567483.jpg');
-    background-repeat: no-repeat;
-    height: 660px;
-    width: 100%;
+  background: 
+    linear-gradient(to right, rgba(255,255,255,0.8) 10%, transparent 100%),
+    url('/pexels-tima-miroshnichenko-7567483.jpg');
 
-    background-size: cover;
-    background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
 }
+
 /* hero box */
+
 #hero-box {
-    height: 200px;
-    width: 300px;
-    background-color: white;
-    border: 2px solid gray;
-    padding: 4px;
     display: flex;
-    justify-items: center;
+
+    height: 100%;
+    padding: 50px;
+}
+#hero-text {
+    height: 200px;
+    width: 400px;
+    border: 2px solid red;
+    background-color: white;
+    position: absolute;
+    right: 60px;
+    top: auto;
+
+    bottom: 160px;
+}
+
+#hero-text-2 {
+    display: flex;
     justify-content: center;
+    justify-items: center;
+    margin-top: 200px;
 }
-#hero-box{
-  position: absolute;
-}
-#hero-text{
-  
+#hero-text2-inside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
