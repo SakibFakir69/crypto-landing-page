@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* utils */
+
+.set-button {
+    height: 40px;
+    width: 120px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+/* navbar */
+header {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+#navbar {
+    width: 90%;
+    height: 50px;
+    border: 2px solid green;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 20%;
+}
+#navbar-list {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+#navbar-text {
+    display: flex;
+    gap: 10px;
+}
+
+/* hero section */
+
+#hero-section {
+    background-image: url('/pexels-tima-miroshnichenko-7567483.jpg');
+    background-repeat: no-repeat;
+    height: 660px;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+}
+/* hero box */
+#hero-box {
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    border: 2px solid gray;
+    padding: 4px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+#hero-box{
+  position: absolute;
+}
+#hero-text{
+  
+}
