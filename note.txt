@@ -4,4 +4,5 @@
 1. dry 
 2. ssot 
 3.clean code 
-4. commit -> use why and what 
+4. commit -> use why and what
+5. preeter and eslint 
