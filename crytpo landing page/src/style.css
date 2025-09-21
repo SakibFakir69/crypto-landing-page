@@ -379,11 +379,38 @@ header {
 }
 .icon-pack-1 div,
 .icon-pack-2 div {
-  background-color: hsl(222, 42%, 94%); /* your box color */
-  border: 1.5px solid rgb(250, 249, 249); /* simulate white gap (half of gap on each side) */
+  background-color: hsl(222, 42%, 94%); 
+  border: 1.5px solid rgb(250, 249, 249); 
   border-radius: 10px;
   padding: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* roadmap */
+.roadmap{
+    
+
+}
+.roadmap-box{
+    display: flex;
+    gap: 20px;
+    margin-top: 70px;
+    justify-content: center;
+}
+.roadmap-up{
+    height: 60px;
+    background-color: black;
+}
+.roadmap-down{
+    height: 260px;
+    background-color: white;
+    color: black;
+}
+.quarterH1{
+    color: white;
+}
+.quarterp{
+    color: white;
 }
