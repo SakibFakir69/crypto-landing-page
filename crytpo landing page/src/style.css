@@ -24,11 +24,26 @@
     background-color: blue;
     color: white;
     border-radius: 5px;
+    border: none;
+}
+.hero-play {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+.hero-icon {
+    height: 30px;
+    width: 30px;
+}
+.hero-btn-box {
+    display: flex;
+    gap: 30px;
 }
 
 /* navbar */
 header {
-    margin-top: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -38,7 +53,6 @@ header {
 }
 
 #navbar {
-    
     width: 90%;
     height: 60px;
     border: 2px solid rgb(234, 240, 234);
@@ -46,10 +60,9 @@ header {
     display: flex;
     justify-content: center;
     justify-items: center;
-   
-    background:rgb(220, 232, 238);
-    border-radius: 30px;
 
+    background: rgb(220, 232, 238);
+    border-radius: 30px;
 }
 #navbar-list {
     margin-top: 10px;
@@ -61,11 +74,11 @@ header {
     display: flex;
     gap: 50px;
 }
-.nav-box3{
+.nav-box3 {
     display: flex;
     gap: 30px;
 }
-.nav-select{
+.nav-select {
     border: none;
     background-color: transparent;
 }
@@ -83,7 +96,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: 750px;
     width: 100%;
 }
 
@@ -96,27 +109,45 @@ header {
     padding: 50px;
 }
 #hero-text {
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 160px;
     width: 400px;
-    border: 2px solid red;
-    background-color: white;
+
+    background: transparent;
     position: absolute;
     right: 60px;
     top: auto;
 
     bottom: 160px;
-}
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(165, 165, 188);
 
+    backdrop-filter: blur(4px);
+}
+.hero-text-abs {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+
+    margin-top: 20px;
+}
 #hero-text-2 {
     display: flex;
     justify-content: center;
     justify-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 #hero-text2-inside {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.hero-h1 {
+    font-size: 65px;
 }
 
 /* what we do */
@@ -212,7 +243,6 @@ header {
 
     left: -150px;
     filter: blur(60px);
-
 }
 
 /* number */
@@ -220,4 +250,140 @@ header {
     margin-top: 70px;
     display: flex;
     justify-content: space-around;
+    padding: 10px;
+    margin: 60px;
+}
+.number-color {
+    color: #230ff2;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+/* industries-box */
+#industries-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px 200px auto;
+    gap: 20px;
+    background-color: rgb(231, 233, 246);
+}
+
+#industries-box1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-image: url('/public/pexels-worldspectrum-844124.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    gap: 20px;
+}
+
+#industries-box2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background: #afa9f0;
+
+    height: 200px;
+    padding: 20px;
+    border-radius: 30px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#industries-box3 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background: #ffffff;
+
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#industries-box4 {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    background: #ffffff;
+
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.image-box {
+    height: 70px;
+
+    margin-left: 100px;
+}
+
+/* faq */
+
+
+.faq-box {
+  display: flex;
+
+
+  
+}
+
+
+.faq-box > div {
+  flex: 1; /* each child takes equal width */
+}
+
+#faq {
+  position: relative;
+  height: 500px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+  background-image: 
+    linear-gradient(to bottom , rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2) 50%), /* stronger black top, fade to transparent */
+    url('/public/52210.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  color: white;
+  border-radius: 10px 0px 0px 10px;
+}
+
+
+
+.faq-right {
+  background: #f2f2f2; /* optional, just to see the box */
+  height: 500px;
+  padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+.icon-pack-1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 3px;
+}
+.icon-pack-2{
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    justify-items: center;
+    gap: 3px;
+
+}
+.icon-pack-1 div,
+.icon-pack-2 div {
+  background-color: hsl(222, 42%, 94%); /* your box color */
+  border: 1.5px solid rgb(250, 249, 249); /* simulate white gap (half of gap on each side) */
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
