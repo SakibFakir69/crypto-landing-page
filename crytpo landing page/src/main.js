@@ -1,3 +1,4 @@
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs';
 
 $(document).ready(() => {
     //// gsap plugin
@@ -88,6 +89,24 @@ $(document).ready(() => {
         }
 
     })
+
+    // slider
+
+
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+      
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    });
 
 
 
