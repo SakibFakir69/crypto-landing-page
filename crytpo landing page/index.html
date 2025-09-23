@@ -28,7 +28,7 @@
           <!-- left side -->
           <div style="display: flex; justify-content: center; justify-items: center;">
 
-            <img id="logo" src="https://img.icons8.com/color/48/cryptocurrency.png" />
+            <img id="logo" style="margin-top: -4px;" src="https://img.icons8.com/color/48/cryptocurrency.png" />
 
             <h2>Krypo</h2>
           </div>
@@ -201,16 +201,17 @@
 
   <!-- slider first -->
 
-  <section>
+  <section style="background-color: #e6eaf3;
+">
     <!-- Slider main container -->
     <div class="swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <img class="swiper-slide" class="slide-img" src="./public/1.jpg" />
-        <img class="swiper-slide" class="slide-img" src="./public/2.jpg" />
-        <img class="swiper-slide" class="slide-img" src="./public/3.jpg" />
-        <img class="swiper-slide" class="slide-img" src="./public/4.jpg" />
+        <img style="background-size: contain;" class="swiper-slide" class="slide-img" src="./public/1.jpg" />
+        <img style="background-size: contain;" class="swiper-slide" class="slide-img" src="./public/2.jpg" />
+        <img  style="background-size: contain;" class="swiper-slide" class="slide-img" src="./public/3.jpg" />
+        <img  style="background-size: contain;" class="swiper-slide" class="slide-img" src="./public/4.jpg" />
 
       </div>
       <!-- If we need pagination -->
@@ -296,86 +297,88 @@
 
   <!-- faq -->
 
-  <section id="faq-box" class="faq-box" style="padding: 4em;">
+  <section id="faq-top-box" style="background-color: #e6eaf3;
+">
+    <section id="faq-box" class="faq-box" style="padding: 4em;">
 
 
-    <div id="faq">
-      <h2 style="margin-left: 100px; margin-top: 50px;">Case Studies</h2>
-      <p style="width: 400px; margin-left: 100px;">Case studies showcase real-world examples of how solutions, products,
-        or strategies are applied successfully.
-        They highlight challenges, approaches, and measurable results, helping others understand best practices and
-        proven outcomes.</p>
-    </div>
+      <div id="faq">
+        <h2 id="faq-h2" style="">Case Studies</h2>
+        <p id="faq-p" style="">Case studies showcase real-world examples of how solutions,
+          products,
+          or strategies are applied successfully.
+          They highlight challenges, approaches, and measurable results, helping others understand best practices and
+          proven outcomes.</p>
+      </div>
 
-    <div class="faq-right"
-      style="background-color: black; display: flex; flex-direction: column; gap: 0; padding: 2em; max-width: 900px; margin: auto; ">
+      <div class="faq-right" style="  ">
 
-      <!-- FAQ 1 -->
-      <div
-        style="display: flex; justify-content: space-between; align-items: center; padding: 1.5em; border-bottom: 1px solid #a7a9ad; min-height: 100px;">
-        <div>
-          <h3 style="color: white; margin: 0;">Digital Identity Management</h3>
-          <p id="faq-text" style="color: white;  margin-top: 10px;"></p>
+        <!-- FAQ 1 -->
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; padding: 1.5em; border-bottom: 1px solid #a7a9ad; min-height: 100px;">
+          <div>
+            <h3 style="color: white; margin: 0;">Digital Identity Management</h3>
+            <p id="faq-text" style="color: white;  margin-top: 10px;"></p>
+          </div>
+          <button id="show1"
+            style="background-color: #3e3d3e; border: none; padding:
+           0.6em 1.2em; height: 40px; width: 60px; border-radius: 50px; cursor: pointer; font-weight: bold; overflow: hidden;">
+
+            <img style="margin-top: -1px;" src="https://img.icons8.com/ios-glyphs/30/ffffff/right--v1.png" />
+          </button>
+
         </div>
-        <button id="show1"
-          style="background-color: #3e3d3e; border: none; padding: 0.6em 1.2em; border-radius: 8px; cursor: pointer; font-weight: bold; overflow: hidden;">
-          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/right--v1.png" />
-        </button>
+
+        <!-- FAQ 2 -->
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; padding: 1.5em; border-bottom: 1px solid #a7a9ad; min-height: 100px;">
+          <div>
+            <h3 style="color: white; margin: 0;">Supply Chain Traceability</h3>
+            <p id="faq-text2" style="color: white;  margin-top: 10px;"></p>
+          </div>
+          <button id="show2"
+            style="background-color: #3e3d3e; border: none; padding:
+           0.6em 1.2em; height: 40px; width: 60px; border-radius: 50px; cursor: pointer; font-weight: bold; overflow: hidden;">
+
+            <img style="margin-top: -1px;" src="https://img.icons8.com/ios-glyphs/30/ffffff/right--v1.png" />
+          </button>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; padding: 1.5em; border-bottom: 1px solid #a7a9ad; min-height: 100px;">
+          <div>
+            <h3 style="color: white; margin: 0;">Real Estate Tokenization</h3>
+            <p id="faq-text3" style="color: white;  margin-top: 10px;"></p>
+          </div>
+
+          <button id="show3"
+            style="background-color: #3e3d3e; border: none; padding:
+           0.6em 1.2em; height: 40px; width: 60px; border-radius: 50px; cursor: pointer; font-weight: bold; overflow: hidden;">
+
+            <img style="margin-top: -1px;" src="https://img.icons8.com/ios-glyphs/30/ffffff/right--v1.png" />
+          </button>
+
+        </div>
+
+        <!-- FAQ 4 -->
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; padding: 1.5em; min-height: 100px;">
+          <div>
+            <h3 style="color: white; margin: 0;">Health Care Record Management</h3>
+            <p id="faq-text4" style="color: white;  margin-top: 10px;"></p>
+          </div>
+          <button id="show4"
+            style="background-color: #3e3d3e; border: none; padding:
+           0.6em 1.2em; height: 40px; width: 60px; border-radius: 50px; cursor: pointer; font-weight: bold; overflow: hidden;">
+
+            <img style="margin-top: -1px;" src="https://img.icons8.com/ios-glyphs/30/ffffff/right--v1.png" />
+          </button>
+        </div>
 
       </div>
 
-      <!-- FAQ 2 -->
-      <div
-        style="display: flex; justify-content: space-between; align-items: center; padding: 1.5em; border-bottom: 1px solid #a7a9ad; min-height: 100px;">
-        <div>
-          <h3 style="color: white; margin: 0;">Supply Chain Traceability</h3>
-          <p id="faq-text2" style="color: white;  margin-top: 10px;"></p>
-        </div>
-        <button id="show2"
-          style="background-color: #3e3d3e; border: none; padding: 0.6em 1.2em; border-radius: 8px; cursor: pointer; font-weight: bold;">
-
-          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/right--v1.png" />
-
-
-        </button>
-      </div>
-
-      <!-- FAQ 3 -->
-      <div
-        style="display: flex; justify-content: space-between; align-items: center; padding: 1.5em; border-bottom: 1px solid #a7a9ad; min-height: 100px;">
-        <div>
-          <h3 style="color: white; margin: 0;">Real Estate Tokenization</h3>
-          <p id="faq-text3" style="color: white;  margin-top: 10px;"></p>
-        </div>
-
-        <button id="show3"
-          style="background-color: #3e3d3e; border: none; padding: 0.6em 1.2em; border-radius: 8px; cursor: pointer; font-weight: bold;">
-
-          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/right--v1.png" />
-
-
-        </button>
-
-      </div>
-
-      <!-- FAQ 4 -->
-      <div
-        style="display: flex; justify-content: space-between; align-items: center; padding: 1.5em; min-height: 100px;">
-        <div>
-          <h3 style="color: white; margin: 0;">Health Care Record Management</h3>
-          <p id="faq-text4" style="color: white;  margin-top: 10px;"></p>
-        </div>
-        <button id="show4"
-          style="background-color: #3e3d3e; border: none; padding: 0.6em 1.2em; border-radius: 8px; cursor: pointer; font-weight: bold;">
-
-          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/right--v1.png" />
-
-
-        </button>
-      </div>
-
-    </div>
-
+    </section>
   </section>
 
 
@@ -550,10 +553,10 @@
   </section>
 
   <section style="background-color: #EBEEF7
-;margin-top: -40px;">
+;margin-top: -50px; padding: 10px;">
 
     <div>
-      <h2 style="color: black;">Founder and Managemnt Team</h2>
+      <h1 style="color: black;text-align: center; margin-bottom: 30px;">Founder and Managemnt Team</h1>
     </div>
 
 
@@ -580,13 +583,16 @@
     </div>
   </section>
 
+
+
+
   <!-- most popular blockchain platfrom -->
 
 
   <section id="coin" style="background-color: #EBECF5; height: 600px;">
 
     <div style="text-align: center; margin-bottom: 50px;">
-      <h2>Most Popular blockchain platfrom</h2>
+      <h2 style="">Most Popular blockchain platfrom</h2>
     </div>
 
     <div id="coin-box">
@@ -676,16 +682,16 @@
 
           <div class="news-box2">
             <div class="newsbox">
-              <h2>Unlock real estate investment opportunites <br /> with Tokenization</h2>
+              <h2 class="news-box2-h2">Unlock real estate investment opportunites <br /> with Tokenization</h2>
               <p> <span>May 2 , 2024</span> / <span>No Comments</span></p>
             </div>
 
             <div class="newsbox">
-              <h2>The emergence of decentralized autonomous <br /> organization</h2>
+              <h2 class="news-box2-h2">The emergence of decentralized autonomous <br /> organization</h2>
               <p> <span>May 13 , 2024</span> / <span>No Comments</span></p>
             </div>
             <div class="newsbox">
-              <h2>Best practices for safe stroage and Management</h2>
+              <h2 class="news-box2-h2">Best practices for safe stroage and Management</h2>
               <p> <span>May 13 , 2024</span> / <span>No Comments</span></p>
             </div>
 
@@ -704,7 +710,7 @@
 
 
     <!-- our community -->
-    <section style="border: 2px solid red;">
+    <section style="border: 2px solid;">
 
       <section style="margin-top: 400px;">
 
@@ -720,8 +726,7 @@
           <div class="community-box-coin">
             <img id="com-img" src="https://img.icons8.com/color/48/bitcoin--v1.png" alt="bitcoin--v1" />
 
-            <p
-              id="com-box">
+            <p id="com-box">
 
               <span style="margin-top: 10px; "> Facebook</span>
 
@@ -730,15 +735,13 @@
 
           <div class="community-box-coin">
 
-            <p
-              id="com-box2">
+            <p id="com-box2">
 
               <span style="margin-top: 12px; "> Telegram</span>
 
             </p>
 
-            <img id="com-img2"   src="https://img.icons8.com/color/48/bitcoin--v1.png"
-              alt="bitcoin--v1" />
+            <img id="com-img2" src="https://img.icons8.com/color/48/bitcoin--v1.png" alt="bitcoin--v1" />
 
 
           </div>
@@ -746,10 +749,9 @@
 
           <div class="community-box-coin">
 
-            <img id="com-img3"  src="https://img.icons8.com/color/48/bitcoin--v1.png" alt="bitcoin--v1" />
+            <img id="com-img3" src="https://img.icons8.com/color/48/bitcoin--v1.png" alt="bitcoin--v1" />
 
-            <p
-            id="com-box3">
+            <p id="com-box3">
 
               <span style="margin-top: 12px; "> Discord</span>
 
@@ -760,15 +762,13 @@
           <div class="community-box-coin">
 
 
-            <p
-              id="com-box4">
+            <p id="com-box4">
 
               <span style="margin-top: 12px; ">twitter</span>
 
             </p>
 
-            <p
-              id="com-box4-1">
+            <p id="com-box4-1">
 
               <span style="margin-top: 12px; "> Instagram</span>
 
@@ -776,13 +776,12 @@
 
           </div>
           <!-- coin -->
-           
+
           <div class="community-box-coin" id="community-box-coin">
 
             <img id="img-box-5" src="https://img.icons8.com/color/48/bitcoin--v1.png" alt="bitcoin--v1" />
 
-            <img id="img-box-5-1"
-              src="https://img.icons8.com/color/48/bitcoin--v1.png" alt="bitcoin--v1" />
+            <img id="img-box-5-1" src="https://img.icons8.com/color/48/bitcoin--v1.png" alt="bitcoin--v1" />
 
 
           </div>
@@ -791,9 +790,7 @@
           <div class="community-box-coin">
 
 
-            <p
-            id="com-box-6"
-              >
+            <p id="com-box-6">
 
               <span style="margin-top: 12px; ">Medium</span>
 
@@ -841,10 +838,10 @@
 
           </div>
 
-          <div id="form-text">
+          <div id="form-text" style="margin-top: 40px;">
             <h3 style="color: white; ">what happend next depends on what you are <br /> looking to do?</h3>
 
-            <div id="milestone" >
+            <div id="milestone">
 
               <div>
                 <span style="height: 40px; width: 40px; background-color:#574C85 ; color: white;">01</span>
@@ -897,7 +894,7 @@
 
 
       <div id="subcribe" style="background-color: #0A0AFF;">
-        <h2 is="subcribe-h2" >Join krypo Newsletter</h2>
+        <h2 is="subcribe-h2">Join krypo Newsletter</h2>
 
         <div id="input-button">
 
