@@ -667,18 +667,12 @@ header {
 #coin-box {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    justify-content: center;   
-    align-items: center;       
-    gap: 0;                   
+    justify-content: center;
+
+    gap: 0;
     margin: 0 auto;
-    padding: 0;                
+    padding: 0;
 }
-
-#coin-box > * {
-    margin: 0;
-    text-align: center;
-}
-
 
 .coin {
     height: 100px;
@@ -692,15 +686,12 @@ header {
     text-align: center;
     transition: transform 0.2s ease-in-out;
     display: flex;
-    
 }
 
-/* hover effect */
 .coin:hover {
     transform: scale(1.05);
 }
 
-/* Tablet (≤1024px) */
 @media (max-width: 1024px) {
     .coin {
         height: 70px;
@@ -708,44 +699,22 @@ header {
     }
 }
 
-/* Tablet (≤768px) → 3 per row */
 @media (max-width: 768px) {
     #coin-box {
         display: grid;
-        grid-template-columns: repeat(3,auto);
-        gap: 10px;
-    }
 
-  
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+    }
 
     .coin {
         height: 65px;
-        width: 100%; /* make it adapt inside grid */
+        width: 100%;
         font-size: 14px;
-    }
-}
-
-/* Mobile (≤480px) → 2 per row */
-@media (max-width: 480px) {
-    #coin-box {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .coin-box1,
-    .coin-box2 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 2 columns */
-        gap: 10px;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .coin {
-        width: 100%;
-        max-width: 180px;
-        height: auto;
-        padding: 10px;
     }
 }
 
@@ -767,18 +736,21 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 600px;
 
     padding: 40px;
+    border-radius: 20px;
 }
 
 .news-card {
     display: flex;
     gap: 20px;
 }
-.new-box1 {
-    border: 2px solid white;
-    border-radius: 10px;
+.news-box1 {
+    background-color: #d7e0ef;
+    padding: 4px;
+    height: 400px;
+    margin-top: 40px;
 }
 .news-box2 {
     display: flex;
@@ -794,6 +766,54 @@ header {
     background-color: #d7e0ef;
     border-radius: 10px;
     margin-top: 20px;
+}
+#news-box1-img {
+    height: 270px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .news-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .news {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        background-image: url('/3d-shape-glowing-with-bright-holographic-colors.jpg');
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 900px;
+
+        padding: 40px;
+        border-radius: 20px;
+    }
+    #news-bg-card {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        height: 300px;
+        top: -250px;
+        right: 15px;
+    }
+    #news-box1-img {
+        height: 270px;
+        width: 300px;
+        border-radius: 20px;
+    }
+    .news-box1 {
+        background-color: #d7e0ef;
+        padding: 10px;
+        height: 380px;
+        width: 320px;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
 }
 
 /* community */
@@ -859,10 +879,14 @@ header {
 .input,
 textarea {
     padding: 10px;
-    border: 2px solid white;
+    border: 2px solid #3A367A;
     border-radius: 5px;
     background: transparent;
     color: white;
+}
+
+#milestone{
+    margin-top: 70px;
 }
 
 textarea {
@@ -882,6 +906,296 @@ button {
 
 button:hover {
     background-color: #0808cc;
+}
+.community-box-coin {
+    border-radius: 2px;
+    height: 80px;
+    width: 120px;
+    background-color: #08111c;
+}
+
+#com-box {
+    height: 50px;
+    width: 120px;
+    border-radius: 2px solid blue;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    border-radius: 8px;
+    rotate: -15deg;
+    background-color: #08111c;
+}
+#com-box {
+    height: 80px;
+    width: 80px;
+}
+/* 2 */
+#com-box2 {
+    height: 50px;
+    width: 150px;
+    border-radius: 2px solid blue;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    border-radius: 8px;
+    rotate: -15deg;
+    background-color: #0089cc;
+}
+#com-img2 {
+    margin-left: 30px;
+    height: 80px;
+    width: 80px;
+}
+
+#com-img3 {
+    height: 80px;
+    width: 80px;
+}
+#com-box3 {
+    height: 50px;
+    width: 120px;
+    border-radius: 2px solid blue;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #08111c;
+}
+/* 4 */
+#com-box4 {
+    height: 50px;
+    width: 120px;
+    border-radius: 2px solid blue;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #08111c;
+    margin-top: -20px;
+}
+#com-box4-1 {
+    height: 50px;
+    width: 120px;
+    border-radius: 2px solid blue;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #08111c;
+    rotate: 25deg;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#img-box-5 {
+    height: 100px;
+    width: 100px;
+}
+#img-box-5-1 {
+    rotate: 12deg;
+    margin-left: 30px;
+    margin-top: -20px;
+    height: 70px;
+    width: 70px;
+}
+#community-box-coin {
+    margin-top: -30px;
+}
+#com-box-6 {
+    height: 50px;
+    width: 120px;
+    border-radius: 2px solid blue;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #08111c;
+    margin-top: -20px;
+    rotate: -25deg;
+    margin-left: 5px;
+}
+
+@media (max-width: 769px) {
+    .community {
+        background-color: #030a11;
+        height: 1900px;
+    }
+
+    #form-box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #form-text{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    #milestone{
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+    }
+
+
+
+
+
+
+
+    .community-coin {
+        display: flex;
+        justify-content: center;
+        margin-top: 400px;
+        margin-bottom: 150px;
+    }
+    .community-box-coin {
+        border-radius: 2px;
+        height: 30px;
+        width: 80px;
+        background-color: #08111c;
+    }
+
+    /* 1 */
+    #com-box {
+        height: 50px;
+        width: 100px;
+        border-radius: 2px solid blue;
+        color: white;
+        border: 2px solid rgb(102, 102, 214);
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
+        border-radius: 8px;
+        rotate: -15deg;
+        background-color: #08111c;
+    }
+    #com-box {
+        height: 50px;
+        width: 80px;
+    }
+    /* 2 */
+    #com-box2 {
+        height: 50px;
+        width: 80px;
+        border-radius: 2px solid blue;
+        color: white;
+        border: 2px solid rgb(102, 102, 214);
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
+        border-radius: 8px;
+        rotate: -15deg;
+        background-color: #0089cc;
+        margin-bottom: 2px;
+        margin-left:-5px;
+    }
+    #com-img2 {
+        margin-left: 6px;
+        height: 50px;
+        width: 80px;
+    }
+    /* 3 */
+    #com-img3 {
+        height: 50px;
+        width: 80px;
+    }
+    #com-box3 {
+        height: 50px;
+        width: 100px;
+        border: 2px solid rgb(102, 102, 214);
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
+        border-radius: 8px;
+        background-color: #08111c;
+    }
+
+    #com-box4 {
+        height: 50px;
+        width: 80px;
+        border-radius: 2px solid blue;
+        color: white;
+            border: 2px solid rgb(102, 102, 214);
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
+        border-radius: 8px;
+        background-color: #08111c;
+        margin-top: -20px;
+    }
+    #com-box4-1 {
+        height: 50px;
+        width: 80px;
+        border-radius: 2px solid blue;
+        color: white;
+        border: 2px solid rgb(102, 102, 214);
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
+        border-radius: 8px;
+        background-color: #08111c;
+        rotate: 25deg;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    #img-box-5 {
+        height: 70px;
+        width: 70px;
+    }
+    #img-box-5-1 {
+        rotate: 12deg;
+        margin-left: 30px;
+        margin-top: -10px;
+        height: 50px;
+        width: 40px;
+    }
+    #community-box-coin {
+        margin-top: -30px;
+    }
+
+    #com-box-6 {
+        height: 50px;
+        width: 80px;
+        border-radius: 2px solid blue;
+        color: white;
+        border: 2px solid rgb(102, 102, 214);
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
+        border-radius: 8px;
+        background-color: #08111c;
+        margin-top: -10px;
+        rotate: -25deg;
+        margin-left: -8px;
+    }
 }
 
 /* Milestone items */
