@@ -1,5 +1,6 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs';
 
+
 $(document).ready(() => {
     //// gsap plugin
     gsap.registerPlugin(
@@ -90,6 +91,141 @@ $(document).ready(() => {
 
     })
 
+    // coin  animation
+
+
+
+
+
+    const comImg = document.getElementById("com-img");
+
+    comImg.addEventListener("mouseover", (event) => {
+        gsap.to(comImg, {
+            x: 100,
+            duration: 0.5,
+            ease: "power2.in"
+        })
+    })
+
+    comImg.addEventListener("mouseleave", (event) => {
+        gsap.to(comImg, {
+            x: 0,
+            duration: 0.5,
+            ease: "power2.in"
+        })
+
+
+    })
+    // telgrame
+
+    const telegram = document.getElementById("com-box2");
+
+    telegram.addEventListener("mouseover", (event) => {
+
+
+        gsap.to(telegram, {
+            y: 50,
+            duration: 0.5,
+            ease: "back.out"
+        })
+
+
+    }
+    )
+    telegram.addEventListener("mouseleave", (event) => {
+        gsap.to(telegram, {
+            y: -50,
+            duration: 0.5,
+            ease: "back.out"
+        })
+
+    })
+
+    // twitter and instagram
+    const coin = document.getElementById("img-box-5");
+
+    gsap.to(coin, {
+        rotate: 360,
+        duration: 6,
+        delay: 0.4,
+        repeat: -1
+
+
+    })
+    const twitter = document.getElementById("com-box4");
+    gsap.to(twitter, {
+
+        duration: 5,
+        y: -60,
+        repeat: -1,
+        ease: "elastic"
+
+    })
+    const instagram = document.getElementById("com-box4-1");
+    gsap.to(instagram, {
+
+        duration: 5,
+        y: -30,
+        repeat: -1,
+        ease: "elastic"
+
+    })
+
+    const medium = document.getElementById("com-box-6");
+
+    medium.addEventListener("mouseenter",(event)=>{
+        gsap.to(medium, {
+            opacity:0.3
+
+        })
+
+    })
+      medium.addEventListener("mouseleave",(event)=>{
+        gsap.to(medium, {
+            opacity:1
+
+        })
+
+    })
+    // discord
+    const discord = document.getElementById("com-box3");
+
+    discord.addEventListener("mouseenter",(event)=>{
+        gsap.to(discord, {
+            opacity:0.3
+
+        })
+
+    })
+      discord.addEventListener("mouseleave",(event)=>{
+        gsap.to(discord, {
+            opacity:1
+
+        })
+
+
+    })
+
+      const coin2= document.getElementById("com-img3");
+
+    coin2.addEventListener("mouseenter",(event)=>{
+        gsap.to(coin2, {
+            opacity:0.3,
+            scale:2,
+
+        })
+
+    })
+      coin2.addEventListener("mouseleave",(event)=>{
+        gsap.to(coin2, {
+            opacity:1,
+            scale:1
+
+        })
+
+
+    })
+
     // slider
 
 
@@ -98,7 +234,7 @@ $(document).ready(() => {
         direction: 'horizontal',
         loop: true,
 
-      
+
 
         // Navigation arrows
         navigation: {
