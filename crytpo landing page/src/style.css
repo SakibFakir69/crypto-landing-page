@@ -51,10 +51,7 @@ header {
     padding: 1em;
     border-radius: 40%;
     z-index: 1000; /* ensures header stays on top */
-
 }
-
-
 
 #navbar {
     width: 90%;
@@ -91,10 +88,6 @@ header {
 }
 
 @media (max-width: 768px) {
-    body {
-    padding-top: 20px; 
-}
-
     #navbar-text {
         display: none;
     }
@@ -108,19 +101,22 @@ header {
         margin-top: 4px;
     }
     #navbar {
-    width: 90%;
-    height: 60px;
-    border: 2px solid rgb(234, 240, 234);
-    line-height: 40px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-right: 20px;
-    z-index: 500px;
+        width: 90%;
+        height: 60px;
+        border: 2px solid rgb(234, 240, 234);
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin-right: 20px;
+        z-index: 500px;
+        margin-left: -20px;
+        margin-top: 10px;
+        position: fixed;
 
-    background: rgb(220, 232, 238);
-    border-radius: 30px;
-}
+        background: rgb(220, 232, 238);
+        border-radius: 30px;
+    }
 }
 
 /* hero section */
@@ -206,8 +202,9 @@ header {
 
         background: transparent;
         position: absolute;
-        right: 60px;
+        right: 20px;
         top: auto;
+        margin-left: 50px;
 
         bottom: 160px;
         padding: 15px;
@@ -222,7 +219,6 @@ header {
 
 /* what we do */
 #card {
-
     width: 100%;
     padding: 8em;
 
@@ -936,7 +932,6 @@ header {
     justify-content: center;
     justify-items: center;
     margin-left: 50px;
-   
 }
 
 /* Contact container */
@@ -1132,14 +1127,13 @@ button:hover {
         background-color: #030a11;
         height: 1900px;
     }
-    
-#form {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-left: 0px;
-   
-}
+
+    #form {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin-left: 0px;
+    }
 
     #form-box {
         display: flex;
@@ -1295,7 +1289,6 @@ button:hover {
         rotate: -25deg;
         margin-left: -8px;
     }
-   
 }
 
 /* Milestone items */
@@ -1523,42 +1516,52 @@ button:hover {
     border-radius: 20px;
     overflow: hidden;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+#swiper-box {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
 }
 
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
 .slide-img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+}
+.slide-content {
+    margin-left: 60px;
+    margin-top: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 769px) {
     .swiper {
-        width: 90%;
-        height: 260px;
+        width: 600px;
+        height: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 0 auto;
     }
-    .slide-img {
-        height: 260px;
+    .swiper .swiper-button-prev {
+        left: 10px;
+        top: 60%;
     }
-}
 
-@media (max-width: 768px) {
-    .swiper {
-        width: 100%;
-        height: 220px;
-        padding: 30px;
+    .swiper .swiper-button-next {
+        right: 10px;
+        top: 60%;
     }
     .slide-img {
-        height: 220px;
-    }
+    height: 230px;
+    width: 300px;
+    border-radius: 5px;
 }
-
-@media (max-width: 480px) {
-    .swiper {
-        width: 100%;
-        height: 180px;
-    }
-    .slide-img {
-        height: 180px;
-        width: 300px;
-    }
 }

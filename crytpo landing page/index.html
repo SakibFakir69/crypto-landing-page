@@ -204,26 +204,53 @@
   <section style="background-color: #e6eaf3;
 ">
     <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <img style="background-size: contain;" class="swiper-slide" class="slide-img" src="./public/1.jpg" />
-        <img style="background-size: contain;" class="swiper-slide" class="slide-img" src="./public/2.jpg" />
-        <img  style="background-size: contain;" class="swiper-slide" class="slide-img" src="./public/3.jpg" />
-        <img  style="background-size: contain;" class="swiper-slide" class="slide-img" src="./public/4.jpg" />
+    <section id="swiper-box" style="padding: 10px;">
 
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div>
+              <img class="slide-img" src="./public/3.jpg" />
+            </div>
+
+            <div class="slide-content">
+              <h3>Blockchain Consulting</h3>
+              <p>Expert advice to help you implement blockchain efficiently.</p>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div>
+              <img class="slide-img" src="./public/2.jpg" />
+            </div>
+            <div class="slide-content">
+              <h3>Wallet Services</h3>
+              <p>Secure and user-friendly wallets for all your crypto needs.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+           <div>
+             <img class="slide-img" src="./public/3.jpg" />
+           </div>
+            <div class="slide-content">
+              <h3>Blockchain Consulting</h3>
+              <p>Expert advice to help you implement blockchain efficiently.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination, Navigation, Scrollbar -->
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+ 
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
-    </div>
+    </section>
   </section>
 
 
