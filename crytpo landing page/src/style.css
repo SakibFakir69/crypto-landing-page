@@ -751,12 +751,12 @@ header {
         flex-direction: column;
         border: 2px solid red;
         gap: 20px;
-
     }
-      #faq-h2, #faq-p {
-        text-align: left; 
-        margin: 0;       
-        padding: 0 15px;  
+    #faq-h2,
+    #faq-p {
+        text-align: left;
+        margin: 0;
+        padding: 0 15px;
     }
 
     .faq-right {
@@ -784,10 +784,16 @@ header {
     align-items: center;
     flex-direction: column;
 }
+.Collabration-text {
+    text-align: center;
+    padding: 50px;
+    font-size: 45px;
+    font-weight: 500;
+    width: 100%;
+}
 .icon-pack {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
 }
 .icon-img {
     height: 50px;
@@ -800,17 +806,26 @@ header {
     flex-direction: column;
     height: 120px;
     width: 150px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-top: none;
+    border-bottom: none;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 @media (max-width: 769px) {
     #colabration {
         padding: 30px;
     }
+    .Collabration-text {
+    text-align: center;
+ 
+    font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+}
     .icon-pack {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -826,10 +841,13 @@ header {
         flex-direction: column;
         height: 80px;
         width: 110px;
-        border: 2px solid rgb(255, 255, 255);
+        border: 1px solid rgb(255, 255, 255);
+        border-top: none;
+        border-bottom: none;
         justify-content: center;
         justify-items: center;
         align-items: center;
+        border-radius: 1px;
     }
 
     .icon-img {
