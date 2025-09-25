@@ -454,8 +454,8 @@ header {
 /* responsive */
 @media (max-width: 768px) {
     #card {
-        padding: 2em; 
-        margin-top: 20px; 
+        padding: 2em;
+        margin-top: 20px;
     }
 
     #card-text {
@@ -525,7 +525,9 @@ header {
     font-size: 50px;
     font-weight: 800;
 }
-#card-box1 ,#card-box2,#card-box3{
+#card-box1,
+#card-box2,
+#card-box3 {
     border-radius: 10px;
 }
 @media (max-width: 768px) {
@@ -546,7 +548,10 @@ header {
 }
 /* industries-box */
 #main-industries {
-    padding: 8em;
+    padding: 14em;
+    border: 2px solid red;
+    margin-top: -150px;
+    margin-bottom: -180px;
 }
 #industries-box {
     display: grid;
@@ -589,7 +594,7 @@ header {
     grid-column: 1 / 2;
     background: #ffffff;
 
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
 }
 
@@ -603,14 +608,14 @@ header {
 }
 
 .image-box {
-    height: 70px;
-
-    margin-left: 100px;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: -10px;
 }
 #box-2-ind {
     display: flex;
     gap: 10px;
-    padding: 10px;
+    padding: 8px;
 }
 
 #join-box {
@@ -631,6 +636,7 @@ header {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         height: auto;
+        margin-top: 120px;
     }
     #box-2-ind {
         display: grid;
@@ -638,7 +644,7 @@ header {
     }
     #main-industries {
         padding: 1em;
-        height: 1250px;
+        height: 1550px;
     }
     #join-box {
         margin-top: 450px;
@@ -647,7 +653,33 @@ header {
         margin-top: 15px;
         font-size: 15px;
     }
+
+    #industries-box3 {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        background: #ffffff;
+        height: 180px;
+
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    #industries-box4 {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+        background: #ffffff;
+        height: 180px;
+
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .image-box {
+        height: 65px;
+        margin-left: 190px;
+        margin-top: -10px;
+    }
 }
+
 /* faq */
 
 .faq-box {
@@ -661,7 +693,7 @@ header {
     background-size: cover;
     padding: 20px;
     color: white;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px;
     width: 100%;
 }
 #faq-top-box {
@@ -673,8 +705,7 @@ header {
 }
 
 #faq {
-    position: relative;
-    height: 500px;
+    height: 350px;
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -685,7 +716,7 @@ header {
     flex-direction: column;
     gap: 0;
     padding: 2em;
-    max-width: 900px;
+
     margin: auto;
     border-radius: 0px 10px 10px 0px;
 }
@@ -697,9 +728,14 @@ header {
     width: 400px;
     margin-left: 100px;
 }
+.arrow-button {
+    height: 20px;
+    width: 20px;
+}
+
 @media (max-width: 768px) {
     #faq-top-box {
-        padding: 0em;
+        padding: 20px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -708,20 +744,19 @@ header {
         width: 450px;
     }
     #faq {
-        height: 500px;
+        height: 350px;
         display: flex;
-        gap: 10px;
+        justify-content: left;
+
         flex-direction: column;
-        margin-right: 300px;
+        border: 2px solid red;
+        gap: 20px;
+
     }
-    #faq-h2 {
-        text-align: center;
-        margin-left: 270px;
-        padding: 10px;
-    }
-    #faq-p {
-        text-align: center;
-        margin-left: 270px;
+      #faq-h2, #faq-p {
+        text-align: left; 
+        margin: 0;       
+        padding: 0 15px;  
     }
 
     .faq-right {
