@@ -236,7 +236,6 @@ header {
 
     background: transparent;
     position: absolute;
- 
 
     padding: 15px;
     border-radius: 20px;
@@ -244,7 +243,6 @@ header {
 
     backdrop-filter: blur(4px);
     z-index: -400px;
-
 }
 /* Small devices (sm: phones <640px) */
 @media (max-width: 640px) {
@@ -258,7 +256,7 @@ header {
         width: 90%;
         right: 5%;
         left: 5%;
-       top: 100px;
+        top: 100px;
         padding: 10px;
     }
 
@@ -283,7 +281,6 @@ header {
 
         backdrop-filter: blur(4px);
         z-index: -400px;
-        
     }
 }
 
@@ -346,7 +343,6 @@ header {
     }
 }
 
-/* Extra large devices (xl: big desktops <1280px) */
 @media (min-width: 1280px) {
     .hero-h1 {
         font-size: 50px;
@@ -422,6 +418,7 @@ header {
     font-size: 20px;
     font-weight: 550;
     line-height: 30px;
+    width: 100%;
 }
 
 /* glow box */
@@ -457,8 +454,8 @@ header {
 /* responsive */
 @media (max-width: 768px) {
     #card {
-        padding: 2em; /* reduce padding */
-        margin-top: 20px; /* optional */
+        padding: 2em; 
+        margin-top: 20px; 
     }
 
     #card-text {
@@ -468,15 +465,17 @@ header {
 
     #card-box {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         width: 100%;
+        padding: 70px;
     }
 
     .card-text-p2 {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 20px;
+        font-size: 20px;
+        font-weight: 520;
+        line-height: 23px;
         margin-bottom: 10px;
+        width: 100%;
     }
     .glow-1 {
         height: 200px;
@@ -499,6 +498,20 @@ header {
     }
 }
 
+@media (min-width: 1024px) {
+    .card-text-p2 {
+        font-size: 30px;
+        font-weight: 590;
+        line-height: 25px;
+    }
+}
+@media (min-width: 780px) {
+    .card-text-p2 {
+        font-size: 30px;
+        font-weight: 590;
+        line-height: 35px;
+    }
+}
 /* number */
 .number {
     margin-top: 70px;
@@ -512,7 +525,9 @@ header {
     font-size: 50px;
     font-weight: 800;
 }
-
+#card-box1 ,#card-box2,#card-box3{
+    border-radius: 10px;
+}
 @media (max-width: 768px) {
     .number {
         display: grid;
@@ -520,7 +535,15 @@ header {
         gap: 20px;
     }
 }
-
+@media (min-width: 1024px) {
+    .number {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+        margin: 40px;
+        margin-left: 60px;
+    }
+}
 /* industries-box */
 #main-industries {
     padding: 8em;
