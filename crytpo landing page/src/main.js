@@ -1,5 +1,15 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs';
+// Default theme
+import '@splidejs/splide/css';
 
+
+// or other themes
+import '@splidejs/splide/css/skyblue';
+import '@splidejs/splide/css/sea-green';
+
+
+// or only core styles
+import '@splidejs/splide/css/core';
 
 $(document).ready(() => {
     //// gsap plugin
@@ -10,6 +20,23 @@ $(document).ready(() => {
         SplitText,
         TextPlugin
     )
+
+
+    // splide
+    new Splide(".splide", {
+        type: "loop",
+        perPage: 3,
+        perMove: 1,
+        autoplay: true,
+        gap: "10px",   // 👈 reduce gap (default ~1rem / 16px)
+        breakpoints: {
+            1024: { perPage: 2, gap: "8px" },
+            768: { perPage: 1, gap: "5px" },
+        },
+    }).mount();
+
+
+    splide.mount();
 
     // jquery faq
     let counter = 0;
@@ -173,16 +200,16 @@ $(document).ready(() => {
 
     const medium = document.getElementById("com-box-6");
 
-    medium.addEventListener("mouseenter",(event)=>{
+    medium.addEventListener("mouseenter", (event) => {
         gsap.to(medium, {
-            opacity:0.3
+            opacity: 0.3
 
         })
 
     })
-      medium.addEventListener("mouseleave",(event)=>{
+    medium.addEventListener("mouseleave", (event) => {
         gsap.to(medium, {
-            opacity:1
+            opacity: 1
 
         })
 
@@ -190,36 +217,36 @@ $(document).ready(() => {
     // discord
     const discord = document.getElementById("com-box3");
 
-    discord.addEventListener("mouseenter",(event)=>{
+    discord.addEventListener("mouseenter", (event) => {
         gsap.to(discord, {
-            opacity:0.3
+            opacity: 0.3
 
         })
 
     })
-      discord.addEventListener("mouseleave",(event)=>{
+    discord.addEventListener("mouseleave", (event) => {
         gsap.to(discord, {
-            opacity:1
+            opacity: 1
 
         })
 
 
     })
 
-      const coin2= document.getElementById("com-img3");
+    const coin2 = document.getElementById("com-img3");
 
-    coin2.addEventListener("mouseenter",(event)=>{
+    coin2.addEventListener("mouseenter", (event) => {
         gsap.to(coin2, {
-            opacity:0.3,
-            scale:2,
+            opacity: 0.3,
+            scale: 2,
 
         })
 
     })
-      coin2.addEventListener("mouseleave",(event)=>{
+    coin2.addEventListener("mouseleave", (event) => {
         gsap.to(coin2, {
-            opacity:1,
-            scale:1
+            opacity: 1,
+            scale: 1
 
         })
 

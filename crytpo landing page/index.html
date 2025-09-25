@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- Link to the file hosted on your server, -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
   <title>Crypto landing page</title>
 </head>
 
@@ -498,7 +502,7 @@
     </div>
 
     <h2 class="" style="text-align: center; ">Road Map</h2>
-    <hr class="hr"/>
+    <hr class="hr" />
 
 
     <!-- 4 card -->
@@ -595,29 +599,52 @@
     <div>
       <h1 style="color: black;text-align: center; margin-bottom: 30px;">Founder and Managemnt Team</h1>
     </div>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+
+        <ul class="splide__list">
+
+          <li class="splide__slide">
+
+            <img class="splide-img" style="border-radius: 10px;" src="./public/1.jpg" />
+
+            <p style="color: black;">Adam jonson</p>
+            <span style="color: gray;">Co Founder & CEO</span>
 
 
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <img class="swiper-slide" class="slide-img" src="./public/1.jpg" />
-        <img class="swiper-slide" class="slide-img" src="./public/2.jpg" />
-        <img class="swiper-slide" class="slide-img" src="./public/3.jpg" />
-        <img class="swiper-slide" class="slide-img" src="./public/4.jpg" />
+          </li>
 
+          <li class="splide__slide">
+
+            <img class="splide-img" style="border-radius: 10px;" src="./public/2.jpg" />
+            <p style="color: black;">Rebecca Haur</p>
+            <span style="color: gray;">Cheif Customer officer</span>
+
+
+          </li>
+
+          <li class="splide__slide">
+
+            <img class="splide-img" style="border-radius: 10px;" src="./public/1.jpg" />
+            <p style="color: black;">promptHub</p>
+            <span style="color: gray;">ceo of promptHub</span>
+
+
+          </li>
+          <li class="splide__slide">
+
+            <img class="splide-img" style="border-radius: 10px;" src="./public/1.jpg" />
+            <p style="color: black;">promptHub</p>
+            <span style="color: gray;">ceo of promptHub</span>
+
+
+          </li>
+        </ul>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+    </section>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
 
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
-    </div>
+
   </section>
 
 
@@ -997,6 +1024,7 @@
   <!-- gsap -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <!-- swiper -->
+  <script src="path-to-the-file/splide.min.js"></script>
 
 
   <script type="module" src="/src/main.js"></script>
