@@ -1,15 +1,5 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs';
-// Default theme
-import '@splidejs/splide/css';
 
-
-// or other themes
-import '@splidejs/splide/css/skyblue';
-import '@splidejs/splide/css/sea-green';
-
-
-// or only core styles
-import '@splidejs/splide/css/core';
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
 
 $(document).ready(() => {
     //// gsap plugin
@@ -20,24 +10,27 @@ $(document).ready(() => {
         SplitText,
         TextPlugin
     )
+    new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
-    // splide
-    new Splide(".splide", {
-        type: "loop",
-        perPage: 3,
-        perMove: 1,
-        autoplay: true,
-        gap: "10px",   // 👈 reduce gap (default ~1rem / 16px)
-        breakpoints: {
-            1024: { perPage: 2, gap: "8px" },
-            768: { perPage: 1, gap: "5px" },
-        },
-    }).mount();
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-
-    splide.mount();
-
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
     // jquery faq
     let counter = 0;
 

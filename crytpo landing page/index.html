@@ -13,8 +13,13 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <!-- Link to the file hosted on your server, -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+
+
+
 
   <title>Crypto landing page</title>
 </head>
@@ -209,53 +214,27 @@
   <section style="background-color: #e6eaf3;
 ">
     <!-- Slider main container -->
-    <section id="swiper-box" style="padding: 10px;">
-
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div>
-              <img class="slide-img" src="./public/3.jpg" />
-            </div>
-
-            <div class="slide-content">
-              <h3>Blockchain Consulting</h3>
-              <p>Expert advice to help you implement blockchain efficiently.</p>
-            </div>
-          </div>
-
-
-          <div class="swiper-slide">
-            <div>
-              <img class="slide-img" src="./public/2.jpg" />
-            </div>
-            <div class="slide-content">
-              <h3>Wallet Services</h3>
-              <p>Secure and user-friendly wallets for all your crypto needs.</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div>
-              <img class="slide-img" src="./public/3.jpg" />
-            </div>
-            <div class="slide-content">
-              <h3>Blockchain Consulting</h3>
-              <p>Expert advice to help you implement blockchain efficiently.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pagination, Navigation, Scrollbar -->
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
       </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-    </section>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+
   </section>
 
 
@@ -330,8 +309,8 @@
 
   <!-- faq -->
 
-  <section id="faq-top-box" style="background-color: #e6eaf3;
-">
+  <section id="faq-top-box">
+
     <section id="faq-box" class="faq-box" style="padding: 4em;">
 
 
@@ -599,7 +578,8 @@
     <div>
       <h1 style="color: black;text-align: center; margin-bottom: 30px;">Founder and Managemnt Team</h1>
     </div>
-    <section class="splide" aria-label="Splide Basic HTML Example">
+
+    <section class="splide2" aria-label="Splide Basic HTML Example">
       <div class="splide__track">
 
         <ul class="splide__list">
@@ -641,6 +621,7 @@
           </li>
         </ul>
       </div>
+
     </section>
 
 
@@ -659,7 +640,7 @@
       <h2 style="">Most Popular blockchain platfrom</h2>
     </div>
 
-    <div id="coin-box">
+    <div id="coin-box" class="coin-box">
 
 
 
@@ -689,18 +670,23 @@
 
 
 
+
       <div class="coin">
-        <img width="48" height="48" src="https://img.icons8.com/color/48/dot-logo--v1.png" alt="dot-logo--v1" />
+        <img width="48" height="48" id="coin1" style="border-top: none;"
+          src="https://img.icons8.com/color/48/dot-logo--v1.png" alt="dot-logo--v1" />
         <p>Dot</p>
       </div>
-      <div class="coin">
-        <img width="64" height="64" src="https://img.icons8.com/arcade/64/binance.png" alt="binance" />
+      <div class="coin" id="coin2">
+        <img width="64" height="64" style="border-top: none;" src="https://img.icons8.com/arcade/64/binance.png"
+          alt="binance" />
         <p>Binance Coin</p>
       </div>
-      <div class="coin">
-        <img width="48" height="48" src="https://img.icons8.com/fluency/48/doge.png" alt="doge" />
+      <div class="coin" id="coin3">
+        <img width="48" height="48" style="border-top: none;" src="https://img.icons8.com/fluency/48/doge.png"
+          alt="doge" />
         <p>Doge Coin</p>
       </div>
+
 
 
 
@@ -734,8 +720,8 @@
               <img id="news-box1-img" src="./public/pexels-crypto-crow-643283-1447418.jpg" />
 
               <div>
-                <h4>The Role of blockchain technology in sustainable <br>development</h4>
-                <p> <span>May 2 , 2024</span> / <span>No Comments</span></p>
+                <h4 style="color: white;">The Role of blockchain technology in sustainable <br>development</h4>
+                <p style="color: rgb(223, 216, 216);"> <span>May 2 , 2024</span> / <span>No Comments</span></p>
               </div>
 
             </div>
@@ -745,18 +731,19 @@
 
 
           <div class="news-box2">
+
             <div class="newsbox">
               <h2 class="news-box2-h2">Unlock real estate investment opportunites <br /> with Tokenization</h2>
-              <p> <span>May 2 , 2024</span> / <span>No Comments</span></p>
+              <p class="news-box2-spand"> <span>May 2 , 2024</span> / <span>No Comments</span></p>
             </div>
 
             <div class="newsbox">
               <h2 class="news-box2-h2">The emergence of decentralized autonomous <br /> organization</h2>
-              <p> <span>May 13 , 2024</span> / <span>No Comments</span></p>
+              <p class="news-box2-spand"> <span>May 13 , 2024</span> / <span>No Comments</span></p>
             </div>
             <div class="newsbox">
               <h2 class="news-box2-h2">Best practices for safe stroage and Management</h2>
-              <p> <span>May 13 , 2024</span> / <span>No Comments</span></p>
+              <p class="news-box2-spand"> <span>May 13 , 2024</span> / <span>No Comments</span></p>
             </div>
 
 
@@ -768,6 +755,8 @@
     </div>
 
     <!-- founder and management team -->
+
+
 
 
 
@@ -883,7 +872,7 @@
 
 
           <div id="form-box">
-            <h2 style="color: white;">Contact Us</h2>
+            <h2 class="form-box-h2" style="color: white;">Contact Us</h2>
 
             <form id="form">
               <input class="input" type="text" placeholder="Type our name" />
@@ -1022,9 +1011,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
   <!-- gsap -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  <!-- swiper -->
-  <script src="path-to-the-file/splide.min.js"></script>
+
 
 
   <script type="module" src="/src/main.js"></script>
