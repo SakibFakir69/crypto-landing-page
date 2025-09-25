@@ -1,6 +1,10 @@
 
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
+import 'swiper/css';
 
+// Optional modules
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 $(document).ready(() => {
     //// gsap plugin
     gsap.registerPlugin(
@@ -10,27 +14,31 @@ $(document).ready(() => {
         SplitText,
         TextPlugin
     )
-    new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+    // slider
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 3, // default for large screens
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 1, // default for smallest devices
+        breakpoints: {
+            480: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+        },
+    });
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+
     // jquery faq
     let counter = 0;
 
@@ -119,7 +127,7 @@ $(document).ready(() => {
 
     const comImg = document.getElementById("com-img");
 
-    comImg.addEventListener("mouseover", (event) => {
+    comImg.addEventListener("mouseover", () => {
         gsap.to(comImg, {
             x: 100,
             duration: 0.5,
@@ -127,7 +135,7 @@ $(document).ready(() => {
         })
     })
 
-    comImg.addEventListener("mouseleave", (event) => {
+    comImg.addEventListener("mouseleave", () => {
         gsap.to(comImg, {
             x: 0,
             duration: 0.5,
@@ -140,7 +148,7 @@ $(document).ready(() => {
 
     const telegram = document.getElementById("com-box2");
 
-    telegram.addEventListener("mouseover", (event) => {
+    telegram.addEventListener("mouseover", () => {
 
 
         gsap.to(telegram, {
@@ -152,7 +160,7 @@ $(document).ready(() => {
 
     }
     )
-    telegram.addEventListener("mouseleave", (event) => {
+    telegram.addEventListener("mouseleave", () => {
         gsap.to(telegram, {
             y: -50,
             duration: 0.5,
@@ -193,14 +201,14 @@ $(document).ready(() => {
 
     const medium = document.getElementById("com-box-6");
 
-    medium.addEventListener("mouseenter", (event) => {
+    medium.addEventListener("mouseenter", () => {
         gsap.to(medium, {
             opacity: 0.3
 
         })
 
     })
-    medium.addEventListener("mouseleave", (event) => {
+    medium.addEventListener("mouseleave", () => {
         gsap.to(medium, {
             opacity: 1
 
@@ -210,14 +218,14 @@ $(document).ready(() => {
     // discord
     const discord = document.getElementById("com-box3");
 
-    discord.addEventListener("mouseenter", (event) => {
+    discord.addEventListener("mouseenter", () => {
         gsap.to(discord, {
             opacity: 0.3
 
         })
 
     })
-    discord.addEventListener("mouseleave", (event) => {
+    discord.addEventListener("mouseleave", () => {
         gsap.to(discord, {
             opacity: 1
 
@@ -228,7 +236,7 @@ $(document).ready(() => {
 
     const coin2 = document.getElementById("com-img3");
 
-    coin2.addEventListener("mouseenter", (event) => {
+    coin2.addEventListener("mouseenter", () => {
         gsap.to(coin2, {
             opacity: 0.3,
             scale: 2,
@@ -236,7 +244,7 @@ $(document).ready(() => {
         })
 
     })
-    coin2.addEventListener("mouseleave", (event) => {
+    coin2.addEventListener("mouseleave", () => {
         gsap.to(coin2, {
             opacity: 1,
             scale: 1
@@ -248,21 +256,6 @@ $(document).ready(() => {
 
     // slider
 
-
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-
-
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-    });
 
 
 
